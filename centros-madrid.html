@@ -1,130 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <title>Todo sobre tenis — Centros para jugar en Madrid</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Centros y clubes donde jugar al tenis en Madrid, con enlaces útiles.">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/0/0e/Tennis_ball_Icon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Todo sobre tenis — Centros donde jugar en Madrid</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <meta name="description" content="Centros y clubes para jugar al tenis en Madrid con enlaces y breve descripción."/>
 </head>
-<body class="page-centros">
-  <a class="skip-link" href="#contenido">Saltar al contenido</a>
-
-  <!-- NAV -->
-  <header class="navbar">
-    <div class="container navbar-inner">
-      <a class="brand" href="index.html"><span class="logo"></span><span>Todo sobre tenis</span></a>
-      <nav class="nav" aria-label="Menú principal">
-        <a href="index.html">Portada</a>
-        <a href="reglas.html">Reglas</a>
-        <a href="torneos-jugadores.html">Torneos y Jugadores</a>
-        <a class="active" href="centros-madrid.html">Centros Madrid</a>
+<body class="centros">
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="brand" href="index.html">🎾 Todo sobre tenis</a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <nav class="site-nav" aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Portada</a></li>
+          <li><a href="reglas.html">Reglas</a></li>
+          <li><a href="torneos.html">Torneos</a></li>
+          <li><a href="jugadores.html">Jugadores</a></li>
+          <li><a class="active" href="centros-madrid.html">Centros Madrid</a></li>
+        </ul>
       </nav>
     </div>
+
+    <section class="hero">
+      <div class="hero-overlay">
+        <h1>Centros donde jugar en Madrid</h1>
+        <p>Una selección de clubes y polideportivos para reservar pista y entrenar.</p>
+        <a href="#contenido" class="btn btn-primary">Ver centros</a>
+      </div>
+    </section>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-inner">
-      <div class="overlay"></div>
-      <div class="container hero-content">
-        <h1>Dónde jugar en Madrid</h1>
-        <p>Selección de clubes y centros con pistas de tierra, dura y cubiertas.</p>
-      </div>
-    </div>
-  </section>
+  <main id="contenido" class="container">
+    <section class="grid-2">
+      <article class="card">
+        <h2>Ciudad de la Raqueta</h2>
+        <p>Complejo de referencia con múltiples pistas de tenis y pádel, torneos y escuela.</p>
+        <p><a class="btn btn-link" href="https://ciudaddelaraqueta.com/" target="_blank" rel="noopener">Web oficial →</a></p>
+      </article>
 
-  <!-- CONTENIDO -->
-  <main id="contenido" class="section">
-    <div class="container">
+      <article class="card">
+        <h2>Caja Mágica</h2>
+        <p>Instalación emblemática del Mutua Madrid Open con pistas cubiertas y al aire libre.</p>
+        <p><a class="btn btn-link" href="https://www.madrid.es/UnidadesDescentralizadas/Deportes/Instalaciones/CajaMagica/web/index.html" target="_blank" rel="noopener">Reservas →</a></p>
+      </article>
 
-      <section>
-        <h2>Centros recomendados</h2>
-        <div class="grid">
-          <div class="col-6">
-            <div class="media">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Estadio_Caja_M%C3%A1gica%2C_Madrid_2013.jpg" alt="Caja Mágica, Madrid" loading="lazy">
-              <div>
-                <h4>Caja Mágica</h4>
-                <p>Complejo de referencia con pistas de tierra y duras. Sede de grandes torneos.</p>
-                <p class="mt-8"><a href="https://www.espaciosmadrid.es/recintos/caja-magica" target="_blank" rel="noopener">Web oficial</a> · <a href="https://maps.app.goo.gl/e4yNfC7F9j9mXq1S7" target="_blank" rel="noopener">Cómo llegar</a></p>
-              </div>
-            </div>
-          </div>
+      <article class="card">
+        <h2>Club de Tenis Chamartín</h2>
+        <p>Club histórico con escuela y competiciones federadas.</p>
+        <p><a class="btn btn-link" href="https://www.ctchamartin.es/" target="_blank" rel="noopener">Web oficial →</a></p>
+      </article>
 
-          <div class="col-6">
-            <div class="media">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Federaci%C3%B3n_de_Tenis_de_Madrid.JPG" alt="Federación de Tenis de Madrid" loading="lazy">
-              <div>
-                <h4>Federación de Tenis de Madrid</h4>
-                <p>Escuelas, torneos y pistas en varios puntos de la Comunidad.</p>
-                <p class="mt-8"><a href="https://www.ftm.es" target="_blank" rel="noopener">Web FTM</a></p>
-              </div>
-            </div>
-          </div>
+      <article class="card">
+        <h2>Club Internacional de Tenis</h2>
+        <p>En Majadahonda, ambiente familiar y formación de base y alto rendimiento.</p>
+        <p><a class="btn btn-link" href="https://www.citinternacionaldetenis.com/" target="_blank" rel="noopener">Web oficial →</a></p>
+      </article>
 
-          <div class="col-6">
-            <div class="media">
-              <img src="https://images.unsplash.com/photo-1542144582-1ba00456b5d5?q=80&w=800&auto=format&fit=crop" alt="Centro deportivo municipal" loading="lazy">
-              <div>
-                <h4>Centros Deportivos Municipales</h4>
-                <p>Amplia red de pistas públicas a precio contenido. Reserva online según distrito.</p>
-                <p class="mt-8"><a href="https://deportesweb.madrid.es" target="_blank" rel="noopener">Reserva municipal</a></p>
-              </div>
-            </div>
-          </div>
+      <article class="card">
+        <h2>Tenis Madrid (Munguía / Fuencarral)</h2>
+        <p>Escuela y alquiler de pistas con varias sedes en la ciudad.</p>
+        <p><a class="btn btn-link" href="https://www.tenismadrid.com/" target="_blank" rel="noopener">Web oficial →</a></p>
+      </article>
 
-          <div class="col-6">
-            <div class="media">
-              <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop" alt="Club privado con pistas de tenis" loading="lazy">
-              <div>
-                <h4>Clubes privados destacados</h4>
-                <p>Instalaciones premium con escuela y torneos sociales.</p>
-                <p class="mt-8"><a href="https://www.google.com/search?q=club+tenis+madrid" target="_blank" rel="noopener">Información y cuotas</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <article class="card">
+        <h2>Polideportivos Municipales</h2>
+        <p>Red de instalaciones del Ayuntamiento con pistas de tenis a precio asequible.</p>
+        <p><a class="btn btn-link" href="https://www.madrid.es/deportes" target="_blank" rel="noopener">Buscar pistas →</a></p>
+      </article>
+    </section>
 
-      <section class="section">
-        <h2>Resumen por tipo de pista</h2>
-        <table class="table">
-          <thead>
-            <tr><th>Centro</th><th>Superficies</th><th>Reserva</th><th>Notas</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Caja Mágica</td><td>Tierra, dura, cubiertas</td><td>Online / Teléfono</td><td>Alta demanda en temporada</td></tr>
-            <tr><td>FTM (varios)</td><td>Tierra y dura</td><td>Online</td><td>Programas de escuela</td></tr>
-            <tr><td>Municipales</td><td>Dura</td><td>Online</td><td>Opciones por distritos</td></tr>
-            <tr><td>Clubes privados</td><td>Tierra y dura</td><td>Socios</td><td>Servicios añadidos</td></tr>
-          </tbody>
-        </table>
-      </section>
-
-      <section class="section">
-        <h2>Consejos rápidos para reservar</h2>
-        <ul>
-          <li><strong>Anticipa</strong> la reserva el fin de semana.</li>
-          <li>Evita horas punta (19–21h) si buscas mejor precio.</li>
-          <li>Comprueba si hay <em>bonos</em> de pista o packs de clases.</li>
-        </ul>
-      </section>
-
-    </div>
+    <aside class="note card">
+      <strong>Consejo:</strong> revisa el tipo de superficie, disponibilidad horaria y si es necesario carnet de club o licencia federativa.
+    </aside>
   </main>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div>© <span id="year"></span> Todo sobre tenis</div>
-      <div class="links">
-        <a href="#">Instagram</a><a href="#">X</a><a href="#">YouTube</a>
-      </div>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> Todo sobre tenis</p>
+      <ul class="social">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter/X</a></li>
+        <li><a href="#">YouTube</a></li>
+      </ul>
     </div>
   </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
-
