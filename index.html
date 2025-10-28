@@ -4,121 +4,96 @@
   <meta charset="utf-8">
   <title>Todo sobre tenis — Portada</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Todo sobre tenis: reglas, torneos, jugadores históricos y centros para jugar en Madrid.">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/0/0e/Tennis_ball_Icon.png">
+  <!-- Bootstrap + Icons + Google Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta name="description" content="Todo sobre tenis: reglas, torneos, grandes jugadores y dónde jugar en Madrid.">
 </head>
-<body class="page-home">
-  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+<body>
 
-  <!-- NAV -->
-  <header class="navbar" role="banner">
-    <div class="container navbar-inner">
-      <a class="brand" href="index.html" aria-label="Ir a Portada">
-        <span class="logo" aria-hidden="true"></span>
-        <span>Todo sobre tenis</span>
-      </a>
-      <nav class="nav" role="navigation" aria-label="Menú principal">
-        <a class="active" href="index.html">Portada</a>
-        <a href="reglas.html">Reglas</a>
-        <a href="torneos-jugadores.html">Torneos y Jugadores</a>
-        <a href="centros-madrid.html">Centros Madrid</a>
-      </nav>
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Todo sobre tenis</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="mainNav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Portada</a></li>
+        <li class="nav-item"><a class="nav-link" href="reglas.html">Reglas</a></li>
+        <li class="nav-item"><a class="nav-link" href="torneos-jugadores.html">Torneos y Jugadores</a></li>
+        <li class="nav-item"><a class="nav-link" href="centros-madrid.html">Centros Madrid</a></li>
+      </ul>
     </div>
-  </header>
+  </div>
+</nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-inner">
-      <div class="overlay"></div>
-      <div class="container hero-content">
-        <h1>Bienvenido a la casa del tenis</h1>
-        <p>Reglas esenciales, grandes torneos, leyendas y dónde jugar en Madrid. Todo, en un solo lugar.</p>
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1600&auto=format&fit=crop');"></div>
+  <div class="container py-5">
+    <h1 class="mb-3">Bienvenido a la casa del tenis</h1>
+    <p class="lead mb-4">Reglas esenciales, grandes torneos, leyendas y dónde jugar en Madrid.</p>
+    <a href="reglas.html" class="btn btn-success btn-lg fw-bold"><i class="bi bi-book"></i> Empezar por las reglas</a>
+  </div>
+</header>
+
+<!-- CONTENIDO -->
+<main class="container py-5">
+  <h2 class="section-title mb-4">Explora</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=1200&auto=format&fit=crop" alt="Reglas" class="card-img-top">
+        <div class="card-body">
+          <h3 class="h5">Reglas básicas</h3>
+          <p class="mb-2">Puntuación, sets, tie-break, saque, superficies y equipamiento.</p>
+          <a class="btn btn-outline-success" href="reglas.html">Ver reglas</a>
+        </div>
       </div>
     </div>
-  </section>
-
-  <!-- CONTENIDO -->
-  <main id="contenido" class="section">
-    <div class="container">
-      <div class="grid">
-        <div class="col-12">
-          <p class="lead">El tenis es precisión, estrategia y resistencia. Aquí encontrarás una guía clara para empezar, disfrutar más como aficionado o mejorar tu juego.</p>
-        </div>
-
-        <div class="col-4">
-          <article class="card">
-            <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=1200&auto=format&fit=crop" alt="Raqueta y pelotas sobre una pista" loading="lazy">
-            <div class="card-body">
-              <h3>Reglas básicas</h3>
-              <p>Marcador, sets, tie-break, let, saques, pistas y equipamiento indispensable.</p>
-              <p class="mt-8"><a href="reglas.html" class="badge brand">Ir a Reglas →</a></p>
-            </div>
-          </article>
-        </div>
-
-        <div class="col-4">
-          <article class="card">
-            <img src="https://images.unsplash.com/photo-1517646287270-cf2ac62636d0?q=80&w=1200&auto=format&fit=crop" alt="Estadio de tenis con público" loading="lazy">
-            <div class="card-body">
-              <h3>Torneos & Leyendas</h3>
-              <p>Grand Slams, Masters 1000 y los mejores jugadores de la historia.</p>
-              <p class="mt-8"><a href="torneos-jugadores.html" class="badge brand">Ver Torneos y Jugadores →</a></p>
-            </div>
-          </article>
-        </div>
-
-        <div class="col-4">
-          <article class="card">
-            <img src="https://images.unsplash.com/photo-1622279457486-62dcc8bf3a29?q=80&w=1200&auto=format&fit=crop" alt="Red de tenis con cielo de fondo" loading="lazy">
-            <div class="card-body">
-              <h3>Dónde jugar en Madrid</h3>
-              <p>Clubes y centros públicos/privados con enlaces para reservar.</p>
-              <p class="mt-8"><a href="centros-madrid.html" class="badge brand">Ver Centros →</a></p>
-            </div>
-          </article>
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="https://images.unsplash.com/photo-1517646287270-cf2ac62636d0?q=80&w=1200&auto=format&fit=crop" alt="Torneos" class="card-img-top">
+        <div class="card-body">
+          <h3 class="h5">Torneos & Leyendas</h3>
+          <p class="mb-2">Grand Slams, Masters 1000 y los mejores de la historia.</p>
+          <a class="btn btn-outline-success" href="torneos-jugadores.html">Ver torneos y jugadores</a>
         </div>
       </div>
-
-      <section class="section">
-        <h2>¿Por qué el tenis engancha?</h2>
-        <div class="grid">
-          <div class="col-6">
-            <div class="media">
-              <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=800&auto=format&fit=crop" alt="Plano táctico sobre pista de tenis" loading="lazy">
-              <div>
-                <h4>Estrategia en cada punto</h4>
-                <p>Variar alturas, efectos y direcciones convierte el juego en ajedrez en movimiento.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="media">
-              <img src="https://images.unsplash.com/photo-1608422050646-d8f0a2f0f3ce?q=80&w=800&auto=format&fit=crop" alt="Deportista corriendo hacia la bola" loading="lazy">
-              <div>
-                <h4>Salud y rendimiento</h4>
-                <p>Mejora cardio, fuerza y coordinación. Es un deporte completo a cualquier edad.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
     </div>
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div>© <span id="year"></span> Todo sobre tenis · Todos los derechos reservados</div>
-      <div class="links">
-        <a href="#" aria-label="Instagram">Instagram</a>
-        <a href="#" aria-label="X / Twitter">X</a>
-        <a href="#" aria-label="YouTube">YouTube</a>
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="https://images.unsplash.com/photo-1622279457486-62dcc8bf3a29?q=80&w=1200&auto=format&fit=crop" alt="Centros Madrid" class="card-img-top">
+        <div class="card-body">
+          <h3 class="h5">Dónde jugar en Madrid</h3>
+          <p class="mb-2">Selección de centros públicos y privados con enlaces útiles.</p>
+          <a class="btn btn-outline-success" href="centros-madrid.html">Ver centros</a>
+        </div>
       </div>
     </div>
-  </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer py-4 mt-5">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+    <div>© <span id="year"></span> Todo sobre tenis</div>
+    <div class="d-flex gap-3 fs-5">
+      <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" aria-label="X/Twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
 </body>
 </html>
+
 
