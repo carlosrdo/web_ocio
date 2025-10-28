@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Todo sobre tenis — Portada</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Todo sobre tenis: reglas, torneos, jugadores históricos y centros para jugar en Madrid.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/favicon.png">
+</head>
+<body class="page-home">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- NAV -->
+  <header class="navbar" role="banner">
+    <div class="container navbar-inner">
+      <a class="brand" href="index.html" aria-label="Ir a Portada">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Todo sobre tenis</span>
+      </a>
+      <nav class="nav" role="navigation" aria-label="Menú principal">
+        <a class="active" href="index.html">Portada</a>
+        <a href="reglas.html">Reglas</a>
+        <a href="torneos-jugadores.html">Torneos y Jugadores</a>
+        <a href="centros-madrid.html">Centros Madrid</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="overlay"></div>
+      <div class="container hero-content">
+        <h1>Bienvenido a la casa del tenis</h1>
+        <p>Reglas esenciales, grandes torneos, leyendas y dónde jugar en Madrid. Todo, en un solo lugar.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENIDO -->
+  <main id="contenido" class="section">
+    <div class="container">
+      <div class="grid">
+        <div class="col-12">
+          <p class="lead">El tenis es precisión, estrategia y resistencia. Aquí encontrarás una guía clara para empezar, disfrutar más como aficionado o mejorar tu juego.</p>
+        </div>
+
+        <div class="col-4">
+          <article class="card">
+            <img src="img/cards-reglas.jpg" alt="Raqueta y pelotas sobre una pista" loading="lazy">
+            <div class="card-body">
+              <h3>Reglas básicas</h3>
+              <p>Marcador, sets, tie-break, let, saques, pistas y equipamiento indispensable.</p>
+              <p class="mt-8"><a href="reglas.html" class="badge brand">Ir a Reglas →</a></p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-4">
+          <article class="card">
+            <img src="img/cards-torneos.jpg" alt="Vista aérea de un estadio de tenis" loading="lazy">
+            <div class="card-body">
+              <h3>Torneos & Leyendas</h3>
+              <p>Grand Slams, Masters 1000 y los mejores jugadores de la historia.</p>
+              <p class="mt-8"><a href="torneos-jugadores.html" class="badge brand">Ver Torneos y Jugadores →</a></p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-4">
+          <article class="card">
+            <img src="img/cards-centros.jpg" alt="Red de tenis con cielo de fondo" loading="lazy">
+            <div class="card-body">
+              <h3>Dónde jugar en Madrid</h3>
+              <p>Clubes y centros públicos/privados con enlaces para reservar.</p>
+              <p class="mt-8"><a href="centros-madrid.html" class="badge brand">Ver Centros →</a></p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <section class="section">
+        <h2>¿Por qué el tenis engancha?</h2>
+        <div class="grid">
+          <div class="col-6">
+            <div class="media">
+              <img src="img/beneficio-estrategia.jpg" alt="Plano táctico sobre pista de tenis" loading="lazy">
+              <div>
+                <h4>Estrategia en cada punto</h4>
+                <p>Variar alturas, efectos y direcciones convierte el juego en ajedrez en movimiento.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="media">
+              <img src="img/beneficio-salud.jpg" alt="Deportista corriendo hacia la bola" loading="lazy">
+              <div>
+                <h4>Salud y rendimiento</h4>
+                <p>Mejora cardio, fuerza y coordinación. Es un deporte completo a cualquier edad.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Todo sobre tenis · Todos los derechos reservados</div>
+      <div class="links">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="X / Twitter">X</a>
+        <a href="#" aria-label="YouTube">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

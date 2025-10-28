@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Todo sobre tenis — Reglas del tenis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Reglas del tenis: puntuación, sets, tie-break, saque, faltas, superficies y equipamiento.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/favicon.png">
+</head>
+<body class="page-reglas">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- NAV -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a class="brand" href="index.html"><span class="logo"></span><span>Todo sobre tenis</span></a>
+      <nav class="nav" aria-label="Menú principal">
+        <a href="index.html">Portada</a>
+        <a class="active" href="reglas.html">Reglas</a>
+        <a href="torneos-jugadores.html">Torneos y Jugadores</a>
+        <a href="centros-madrid.html">Centros Madrid</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="overlay"></div>
+      <div class="container hero-content">
+        <h1>Reglas del tenis</h1>
+        <p>Lo imprescindible para entender y jugar: puntuación, sets, saque y más.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENIDO -->
+  <main id="contenido" class="section">
+    <div class="container">
+      <div class="grid">
+        <div class="col-6">
+          <h2>Puntuación del juego</h2>
+          <p>Un juego progresa: <strong>0 → 15 → 30 → 40 → juego</strong>. Con 40-40 hay <em>deuce</em> (iguales); se necesita <em>ventaja</em> y luego un punto más para ganar.</p>
+          <h2 class="mt-24">Sets y partido</h2>
+          <p>Un set se gana con <strong>6 juegos</strong> y diferencia de 2. Si hay 6-6 suele jugarse <strong>tie-break</strong> a 7 (ventaja de 2). Los partidos suelen ser al mejor de 3 sets (WTA/ATP) o 5 (Grand Slam masculino).</p>
+          <h2 class="mt-24">Saque y faltas</h2>
+          <ul>
+            <li>Dos intentos por punto. Si la bola toca la red y cae dentro, es <em>let</em> y se repite.</li>
+            <li>El sacador debe golpear la bola sin pisar la línea de fondo (<em>foot fault</em>).</li>
+            <li>El receptor puede colocarse donde quiera del lado correcto.</li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <h2>Superficies</h2>
+          <p>Afectan al bote y velocidad:</p>
+          <ul>
+            <li><strong>Tierra batida</strong>: bote alto, peloteos largos (ej. Roland Garros).</li>
+            <li><strong>Dura</strong>: equilibrada, bote medio (ej. US Open, Open de Australia).</li>
+            <li><strong>Hierba</strong>: rápida, bote bajo (ej. Wimbledon).</li>
+          </ul>
+          <h2 class="mt-24">Equipamiento</h2>
+          <ul>
+            <li>Raqueta (tensión de cuerdas según estilo).</li>
+            <li>Pelotas homologadas (velocidad/altura).</li>
+            <li>Zapatillas específicas según superficie.</li>
+          </ul>
+          <h2 class="mt-24">Modalidades</h2>
+          <p>Individuales y dobles. En dobles se usa el pasillo lateral (<em>doubles alley</em>).</p>
+        </div>
+      </div>
+
+      <section class="section">
+        <h2>Gestos y términos útiles</h2>
+        <div class="grid">
+          <div class="col-3"><span class="badge">Ace</span> Saque directo sin devolución.</div>
+          <div class="col-3"><span class="badge">Break</span> Ganar el juego al resto.</div>
+          <div class="col-3"><span class="badge">Drive</span> Golpe de derecha.</div>
+          <div class="col-3"><span class="badge">Slice</span> Efecto cortado, bote bajo.</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Dimensiones de la pista</h2>
+        <table class="table">
+          <thead>
+            <tr><th>Elemento</th><th>Medida</th><th>Notas</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Largo</td><td>23,77 m</td><td>Idéntico en individuales y dobles</td></tr>
+            <tr><td>Ancho</td><td>8,23 m / 10,97 m</td><td>Indiv. / Dobles</td></tr>
+            <tr><td>Altura red</td><td>0,914 m</td><td>En el centro</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Todo sobre tenis</div>
+      <div class="links">
+        <a href="#">Instagram</a><a href="#">X</a><a href="#">YouTube</a>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
